@@ -15,14 +15,14 @@ WebStorage.setLocalStorageWithChecked(key, value);
 WebStorage.setLocalStorage(key, value);
 WebStorage.getLocalStorage(key);
 WebStorage.removeLocalStorage(key);
-WebStorage.clearLocalStorage();
+WebStorage.cleanLocalStorage();
 
 // Session Storage
 WebStorage.setSessionStorageWithChecked(key, value);
 WebStorage.setSessionStorage(key, value);
 WebStorage.getSessionStorage(key);
 WebStorage.removeSessionStorage(key);
-WebStorage.clearSessionStorage();
+WebStorage.cleanSessionStorage();
 ```
 
 ### License

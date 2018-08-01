@@ -1,28 +1,28 @@
 {
-    "name": "okwebstorage",
-    "version": "0.0.7",
-    "description": "A JavaScript Library for HTML5 Local/Session Storage Operation.",
-    "main": "./lib/okWebStorage.js",
-    "repository": "https://github.com/shaching/okWebStorage",
-    "author": "Johnny Chu <chuhsun@gmail.com>",
-    "license": "Apache 2.0",
-    "scripts": {
-        "build": "webpack -p --config webpack.config.js",
-        "eslint": "eslint ./src"
-    },
-    "dependencies": {
-        "is_js": "^0.9.0"
-    },
-    "devDependencies": {
-        "babel-core": "^6.26.3",
-        "babel-eslint": "^8.2.6",
-        "babel-loader": "^7.1.5",
-        "babel-polyfill": "^6.26.0",
-        "babel-preset-env": "^1.7.0",
-        "eslint": "^4.5.0",
-        "eslint-loader": "^2.0.0",
-        "eslint-plugin-import": "^2.13.0",
-        "uglifyjs-webpack-plugin": "^1.2.7",
-        "webpack": "^3.5.5"
-    }
+  "name": "okwebstorage",
+  "version": "0.0.7",
+  "description": "A JavaScript Library for HTML5 Local/Session Storage Operation.",
+  "main": "./lib/okWebStorage.js",
+  "repository": "https://github.com/shaching/okWebStorage",
+  "author": "Johnny Chu <chuhsun@gmail.com>",
+  "license": "Apache 2.0",
+  "scripts": {
+    "build": "webpack -p --config webpack.config.js",
+    "eslint": "eslint ./src"
+  },
+  "dependencies": {
+    "is_js": "^0.9.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.2.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.13.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^3.5.5"
+  }
 }

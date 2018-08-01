@@ -30,7 +30,7 @@ WebStorage.cleanSessionStorage();
 okWebStorage is released under the [Apache 2.0 license](LICENSE).
 
 ```
-Copyright 2017 Johnny Chu<chuhsun@gmail.com>
+Copyright 2018 Johnny Chu<chuhsun@gmail.com>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

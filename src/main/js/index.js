@@ -4,22 +4,22 @@ const setLocalStorageWithChecked = WebStorage.setLocalStorageWithChecked;
 const setLocalStorage = WebStorage.setLocalStorage;
 const getLocalStorage = WebStorage.getLocalStorage;
 const removeLocalStorage = WebStorage.removeLocalStorage;
-const clearLocalStorage = WebStorage.clearLocalStorage;
+const cleanLocalStorage = WebStorage.cleanLocalStorage;
 const setSessionStorageWithChecked = WebStorage.setSessionStorageWithChecked;
 const setSessionStorage = WebStorage.setSessionStorage;
 const getSessionStorage = WebStorage.getSessionStorage;
 const removeSessionStorage = WebStorage.removeSessionStorage;
-const clearSessionStorage = WebStorage.clearSessionStorage;
+const cleanSessionStorage = WebStorage.cleanSessionStorage;
 
 export {
-    setLocalStorageWithChecked,
-    setLocalStorage,
-    getLocalStorage,
-    removeLocalStorage,
-    clearLocalStorage,
-    setSessionStorageWithChecked,
-    setSessionStorage,
-    getSessionStorage,
-    removeSessionStorage,
-    clearSessionStorage,
+  setLocalStorageWithChecked,
+  setLocalStorage,
+  getLocalStorage,
+  removeLocalStorage,
+  cleanLocalStorage,
+  setSessionStorageWithChecked,
+  setSessionStorage,
+  getSessionStorage,
+  removeSessionStorage,
+  cleanSessionStorage,
 };

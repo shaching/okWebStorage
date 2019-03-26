@@ -1,5 +1,5 @@
 # okWebStorage
-A JavaScript Library for HTML5 Local/Session Storage Operation.
+Operated HTML5 Local/Session Storage in ES6.
 
 # Install
 ```

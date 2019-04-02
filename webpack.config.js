@@ -1,19 +1,18 @@
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
+const FileManagerPlugin = require('filemanager-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-  entry: [
-    'babel-polyfill',
-    './src/main/js/index.js'
-  ],
-
+  mode: 'production',
+  entry: ['@babel/polyfill', './src/index.js'],
   output: {
-    path: path.resolve('lib'),
     filename: 'okWebStorage.js',
     libraryTarget: 'umd',
     library: 'okWebStorage',
   },
-
+  resolve: {
+    extensions: ['.js'],
+  },
   module: {
     rules: [
       {
@@ -21,28 +20,29 @@ module.exports = {
         test: /\.js$/,
         include: [path.resolve('src')],
         exclude: [path.resolve('node_modules')],
-        use: 'eslint-loader'
-      }, {
+        use: 'eslint-loader',
+      },
+      {
         test: /\.js$/,
         include: [path.resolve('src')],
         exclude: [path.resolve('node_modules')],
-        use: 'babel-loader'
-      }
-    ]
+        use: 'babel-loader',
+      },
+    ],
   },
-
-  resolve: {
-    extensions: ['.js']
+  target: 'web',
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: false,
+      }),
+      new FileManagerPlugin({
+        onStart: {
+          delete: ['./dist/'],
+        },
+      }),
+    ],
   },
-
-  plugins: [
-    new UglifyJSPlugin({
-      parallel: true,
-      uglifyOptions: {
-        ecma: 8,
-        compress: true,
-        warnings: false
-      }
-    })
-  ],
 };

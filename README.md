@@ -11,18 +11,16 @@ yarn add okwebstorage
 import * as WebStorage from 'okwebstorage';
 
 // Local Storage
-WebStorage.setLocalStorageWithChecked(key, value);
-WebStorage.setLocalStorage(key, value);
-WebStorage.getLocalStorage(key);
-WebStorage.removeLocalStorage(key);
-WebStorage.cleanLocalStorage();
+WebStorage.Local.set(key, value);
+WebStorage.Local.get(key);
+WebStorage.Local.remove(key);
+WebStorage.Local.clear();
 
 // Session Storage
-WebStorage.setSessionStorageWithChecked(key, value);
-WebStorage.setSessionStorage(key, value);
-WebStorage.getSessionStorage(key);
-WebStorage.removeSessionStorage(key);
-WebStorage.cleanSessionStorage();
+WebStorage.Session.set(key, value);
+WebStorage.Session.get(key);
+WebStorage.Session.remove(key);
+WebStorage.Session.clear();
 ```
 
 ### License

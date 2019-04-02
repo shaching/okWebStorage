@@ -38,11 +38,13 @@ module.exports = {
         parallel: true,
         sourceMap: false,
       }),
-      new FileManagerPlugin({
-        onStart: {
-          delete: ['./dist/'],
-        },
-      }),
     ],
   },
+  plugins: [
+    new FileManagerPlugin({
+      onStart: {
+        delete: ['./dist/'],
+      },
+    }),
+  ],
 };
